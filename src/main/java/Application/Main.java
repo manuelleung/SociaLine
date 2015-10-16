@@ -14,18 +14,8 @@ public class Main {
 
     public static void main(String args[]) throws ClassNotFoundException, SQLException, InstantiationException, IllegalAccessException {
 
-        //database information
-
-        /*
-        * URL: 217.199.187.197
-        * DBNAME:cl56-socialline
-        * USER:cl56-socialine
-        * PASSWORD:eniLaicoS
-        *
-        * */
-
-        database = new Database("217.199.187.197","cl56-socialine","cl56-socialine", "eniLaicoS");
-
-
+        //database connection
+        database = new Database(Config.DBURL,Config.DBNAME,Config.DBUSER, Config.DBPASS);
+        
     }
 }
